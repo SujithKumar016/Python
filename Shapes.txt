@@ -1,0 +1,13 @@
+l=int(input("Enter the Length of the Reactangle: "))
+b=int(input("Enter the Breadth of the Rectangle: "))
+rectangle=l*b
+print("Area of Rectangle is: ",rectangle)
+
+h = int(input("Enter triangle's height length: "))
+b = int(input("Enter triangle's breadth length: "))
+triangle=(0.5*b*h)
+print("Area of Triangle is: ",triangle)
+
+r = int(input("Enter circle's radius length: "))
+circle=(3.14*r*r)
+print("Area of Circle is: ",circle)

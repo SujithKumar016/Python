@@ -1,0 +1,17 @@
+<Html>
+<head>
+	<title>Sample Program</title>
+	<style>
+		h1{
+		color:red;
+		font-family:algerian;
+	</style>
+</head>
+<body>
+<script>
+	n=window.prompt('Enter the Text')
+	alert(n);
+	document.write('<h1>'+n+'</h1>');
+</script>
+</body>
+</Html>

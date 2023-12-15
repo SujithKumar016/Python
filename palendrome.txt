@@ -1,0 +1,8 @@
+s=input("Enter a String: ")
+x=""
+for i in s:
+    x=i+x
+if(x==s):
+    print("String is Palendrome")
+else:
+    print("String is Not a palendrome")

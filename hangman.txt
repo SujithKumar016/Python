@@ -1,0 +1,32 @@
+import random
+n=(input("Enter Your Name: "))
+words=["apple","cake","bannana","car","books"]
+word=random.choice(words)
+#print(word)
+print(n,"Welcome to HangMan Game..")
+display =[]
+for i in range(len(word)):
+    display  += '_'
+print(display)
+print(n,"Guess the Letter??")
+game_over=False
+attempts=8
+
+while not game_over:
+    letters=input("Guess the correct letter: ")
+    for i in range(len(word)):
+        letter=word[i]
+        if letter==letters:
+            display[i]=letters
+    print(display)
+    
+    if letters not in word:
+        attempts-=1
+        print("Your remaining attempts-",attempts)
+        if attempts==0:
+            game_over=True
+            print("No more attempts You Loose!")
+            print("Correct word is:",word)
+    if '_' not in display:
+        game_over=True
+        print("Congratulations you win!!!")
